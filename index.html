@@ -1,26 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Sidebar</title>
-  <link href="reset.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sidebar-Rocketseat</title>
 </head>
 
 <body>
-  <div id="mySidebar" class="sidebar">
-    <button class="botao" onclick="openNav()" id="button">&#9776; </button>
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
-    <a href="#">Sobre</a>
-    <a href="#">Serviços</a>
-    <a href="#">Clientes</a>
-    <a href="#">COntato</a>
-  </div>
-  
-  <script src="script.js"></script>
 
+  <nav>
+    <div class="menu-nav">
+      <div class="header-nav">
+        <img class="img-icone" src="assets/images/logo.svg" alt="Icone da Vet.">
+        <button onclick="clicou()"><img src="assets/images/menu.svg" alt="Icone do Menu"></button>
+      </div>
+      <div class="content-menu active">
+        <img src="assets/images/search.svg" alt="Icone de Pesquisa">
+        <p class="text-p">Buscar</p>
+      </div>
+      <div class="content-menu">
+        <img src="assets/images/grid.svg" alt="Icone de Dashboard">
+        <p class="text-p">Dashboard</p>
+      </div>
+      <div class="content-menu">
+        <img src="assets/images/pet.svg" alt="Icone de Pets">
+        <p class="text-p">Pets</p>
+      </div>
+      <div class="content-menu">
+        <img src="assets/images/user.svg" alt="Icone de Clientes">
+        <p class="text-p">Clientes</p>
+      </div>
+      <div class="content-menu">
+        <img src="assets/images/vet.svg" alt="Icone de Veterinário">
+        <p class="text-p">Vets</p>
+      </div>
+      <div class="content-menu">
+        <img src="assets/images/settings.svg" alt="Icone de Ajustes">
+        <p class="text-p">Ajustes</p>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="info-user">
+        <img src="assets/images/photo.png" alt="Foto do Usuário">
+        <div class="text-user">
+          <p>Souza Leite</p>
+          <p>Professor</p>
+        </div>
+      </div>
+      <img src="assets/images/log-out.svg" alt="Icone de Sair">
+    </div>
+  </nav>
+
+  <main>
+    <h1>Dashboard</h1>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

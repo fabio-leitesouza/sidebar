@@ -1,12 +1,14 @@
-/* Definir a largura da barra lateral para px e a margem esquerda do conteúdo da página para px */
-function openNav() {
-  
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
+function clicou() {
+  const menu = document.querySelector('nav');
+  const imgLogo = document.querySelector('.img-icone');
+  const infoUser = document.querySelector('.info-user');
+  const footerNav = document.querySelector('.footer-nav');
+  document.querySelectorAll('.text-p').forEach(function(element){
+    element.classList.toggle('add-block');
+  })
 
-/* Definir a largura da barra lateral como 0 e a margem esquerda do conteúdo da página como 0 */
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "50px";
-  document.getElementById("main").style.marginLeft = "50px";
+  menu.classList.toggle('add-nav');
+  imgLogo.classList.toggle('add-block');
+  infoUser.classList.toggle('add-flex');
+  footerNav.classList.toggle('padding');
 }

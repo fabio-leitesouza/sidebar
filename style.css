@@ -1,57 +1,147 @@
-
-/* The sidebar menu */
-.sidebar {
-  height: 100%; 
-  width: 50px; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+:root {
+  --body-bg-color: #7a74d8;
+  --green: #d7873c;
+  --light-green: #b157b7;
+	--light-grey: #dce4e3;
+  --text-color: #100977;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
+body {
+  height: 100vh;
+  display: flex;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
 }
 
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 6vw;
+  background-color: var(--green);
+  overflow-x:hidden;
+  overflow-y:auto;
+  transition: all ease 0.5s;
 }
 
-.botao {
-  font-size: 20px;
+.menu-nav {
+  width: 100%;
+  margin: 26px 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 30px 30px;
+}
+
+.img-icone {
+  display: none;
+  margin-right: 90px;
+}
+
+.header-nav button {
+  background-color: transparent;
+  border: transparent;
+}
+
+.header-nav img, .content-menu, .footer-nav img {
   cursor: pointer;
-  background-color: #18C29C;
-  color: white;
-  padding: 10px 15px;
-  border: none;
 }
 
-.openbtn:hover {
-  background-color: #444;
+.content-menu {
+  margin: 0 15px 8px 15px;
 }
 
+.content-menu {
+  display: flex;
+  align-items: center;
+  padding: 14px 12px;
+  border-radius: 12px;
+}
 
+.active {
+  background-color: var(--light-grey);
+}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+.text-p {
+  display: none;
+  margin-left: 10px;
+  font-size: .9rem;
+  color: var(--text-color);
+}
+
+.footer-nav {
+  padding: 0 15px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: var(--light-green);
+}
+
+.info-user {
+  display: none;
+  line-height: 15px;
+  color: var(--text-color);
+}
+
+.info-user p:first-child {
+  font-size: .9rem;
+}
+
+.info-user p:last-child {
+  font-size: .7rem;
+}
+
+.info-user img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  object-position: -3px 0;
+  border-radius: 12px;
+}
+
+.text-user {
+  min-width: 100%;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  background-color: var(--light-grey);
+}
+
+main h1 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.add-nav {
+  width: 22vw;
+  overflow-x:hidden;
+  overflow-y:auto;
+  transition: all ease 0.5s;
+}
+
+.add-block {
+  display: block;
+}
+
+.add-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.padding {
+  padding: 0 15px 0 15px;
 }
